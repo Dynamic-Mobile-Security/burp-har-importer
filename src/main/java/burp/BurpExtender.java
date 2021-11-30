@@ -10,9 +10,9 @@ Released under AGPL see LICENSE for more information
 
 package burp;
 
-import wstalker.WStalker;
+import sting.RAYtalker;
 
-public class BurpExtender extends WStalker
+public class BurpExtender extends RAYtalker
 {
 	public static void main(String [] args){
 		System.out.println("You have built the BurpImportSitemap extension. You shall play with the jar file now!");
