@@ -1,30 +1,28 @@
-Плагин для импорта файлов в формате har (HTTP Archive format) в Burp (Target -> Sitemap).
+Plugin for importing files in HAR format (HTTP archive) into Burp (Target -> Sitemap).
 
-За основу взят оригинальный плагин https://github.com/nccgroup/BurpImportSitemap/
+The original plugin is taken as a basis https://github.com/nccgroup/BurpImportSitemap/
 
 ## Import To Sitemap Extension
 
-Import To Sitemap is a Burp Suite Extension to import wstalker CSV file or ZAP export file into Burp Sitemap. It also includes a contextual menu to send request/response items from any tab to the sitemap.
+Import To Sitemap is a Burp Suite Extension to import wstalker CSV file or ZAP export file into Burp Sitemap. 
+It also includes a contextual menu to send request/response items from any tab to the sitemap.
 
 
 
-## В текущий плагин добавлено:
-- возможность загрузки файлов в формате har.
+## Added to the plugin:
+ - Ability to download files in HAR format.
 
-## Особенности плагина:
-- для сохранения разных HTTP-методов для одинакового URL используется флаг stingrayParamToExclude,
-который добавляет этот параметр к URL и к нему уникальное значение uuid, тем самым URL становиться уникальным.
-Этот параметр добавляется в URL только ко второму и последующим запросам, URL первого запроса остаётся чистым.
-Этот костыль сделан из-за того, что Burp не может сохранить запрос с одинаковыми URL (он перезаписывается последним).
-- Если в архиве har нет "дублирующихся" URL, тогда можно флаг stingrayParamToExclude выключить.
+## Plugin features:
+- the `mdastParamToExclude` flag is used to save different HTTP methods for the same URL.
+  This feature adds fake parameter with unique uuid value to the URL (to make the URL unique).
+  This parameter is added to the URL only for the second and subsequent requests, the URL of the first request remains clean.
+  This crutch is made because Burp cannot save a request with the same URL (it gets rewritten by the last one).
+- If there are no "duplicate" URLs in the har archive, then the `mdastParamToExclude` flag can be turned off.
 
-## Сборка плагина:
+## Build instructions:
 > gradle -version
 Gradle 6.4.1
 
 > gradle buildFatJar
 
-Собранный плагин будет в каталоге: build/libs/import-sitemap.jar
-
-
-
+The built plugin will be in the directory: `build/libs/import-sitemap.jar`

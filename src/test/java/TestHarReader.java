@@ -36,8 +36,7 @@ public class TestHarReader {
 
         // check the current directory
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        //String filename = "src/test/resoureces/mock_api.har";
-        String filename = "../sting_networking/data.har";
+        String filename = "../networking/data.har";
 
         HarReader harReader = new HarReader();
         Har har = null;
@@ -84,7 +83,7 @@ public class TestHarReader {
                 System.out.println(harResponse.getStatusText());
                 System.out.println(harResponse.getHttpVersion());
 
-                // TODO - привести к похожему формату как в CSV...
+                // TODO - lead to similar format as in CSV
                 //byte[] request = helpers.stringToBytes(harRequest.toString());
                 //byte[] response = helpers.stringToBytes(harResponse.toString());
 

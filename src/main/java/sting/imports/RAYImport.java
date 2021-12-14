@@ -137,8 +137,8 @@ public class RAYImport {
     static public String makeRequest(HarRequest harRequest, boolean doTrick) {
         StringBuilder request = new StringBuilder();
 
-        // TODO - doTrick: Добавь к параметру метод в качестве значения.   stingrayParamToExclude=post | put | get
-        //  Если в множестве уже будет присутствовать УРЛ у которого НЕТ параметров.
+        // TODO - doTrick:  Add a method to the parameter as a value.  mdastParamToExclude=post | put | get
+        //  If the set already contains a URL that has NO parameters.
         String method = harRequest.getMethod().name();
         String version = harRequest.getHttpVersion();
         String headers = printHeaders(harRequest.getHeaders());

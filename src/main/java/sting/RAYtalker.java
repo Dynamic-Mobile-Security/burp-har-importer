@@ -30,7 +30,7 @@ import burp.IHttpRequestResponse;
 public class RAYtalker implements ITab, IBurpExtender, IContextMenuFactory {
 
     public static String Name = "HAR Import Sitemap";
-    public static String Url = "https://github.com/swordfish/HarBurpImportSitemap";
+    public static String Url = "https://github.com/Dynamic-Mobile-Security/burp-har-importer";
     public static IBurpExtenderCallbacks callbacks;
     public static RAYPanel panel;
     public static RAYtalker instance;
@@ -52,52 +52,6 @@ public class RAYtalker implements ITab, IBurpExtender, IContextMenuFactory {
         // Print "Loaded" message
         PrintWriter stdout = new PrintWriter(RAYtalker.callbacks.getStdout(), true);
         stdout.println("Loaded " + RAYtalker.Name + " Extension");
-        stdout.println("");
-        stdout.println("░░                                                                      ");
-        stdout.println("  ▒▒░░                                                                  ");
-        stdout.println("      ▓▓                                                                ");
-        stdout.println("        ▒▒▒▒                                            ░░░░            ");
-        stdout.println("          ░░▓▓░░                                    ▒▒██                ");
-        stdout.println("              ▓▓▓▓░░                              ██▓▓                  ");
-        stdout.println("                ░░████░░                      ▒▒██▓▓▒▒                  ");
-        stdout.println("                    ▒▒▓▓▓▓░░░░░░            ░░████▓▓                    ");
-        stdout.println("                      ░░▓▓▓▓▓▓▓▓▒▒░░  ░░░░▒▒▓▓▓▓▓▓▒▒                    ");
-        stdout.println("                ▒▒░░░░  ░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▒▒                  ");
-        stdout.println("                    ▒▒██▓▓░░▒▒▓▓██▓▓▒▒████████▓▓▓▓▓▓▒▒▓▓░░              ");
-        stdout.println("                      ░░▓▓▒▒▒▒▒▒▓▓▒▒▒▒▒▒██████████▓▓▓▓▒▒▒▒▒▒            ");
-        stdout.println("                          ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓██████▓▓▒▒▒▒▒▒▒▒          ");
-        stdout.println("                            ▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▓▓██████▓▓▓▓▒▒▒▒▒▒        ");
-        stdout.println("                            ░░▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓████████▓▓▓▓▒▒▒▒░░      ");
-        stdout.println("                              ▒▒▓▓▓▓▓▓▓▓▒▒▒▒░░▒▒▒▒▓▓██████▓▓▓▓▒▒▓▓      ");
-        stdout.println("                                ▒▒▓▓▓▓▓▓▒▒▓▓▒▒▒▒▒▒▒▒▓▓████████▓▓▒▒░░    ");
-        stdout.println("                                ████▓▓▒▒████▓▓▒▒░░▒▒▒▒▒▒▓▓████▓▓▓▓▓▓    ");
-        stdout.println("                              ▒▒▓▓    ▒▒▓▓██▓▓▓▓▓▓▒▒▒▒▒▒▓▓▓▓████▓▓▓▓▒▒  ");
-        stdout.println("                              ▓▓        ▒▒██▓▓▒▒▒▒▓▓▓▓▓▓▒▒▓▓▓▓████▓▓▓▓  ");
-        stdout.println("                                          ██▓▓▒▒▓▓░░░░▒▒▓▓▒▒▓▓▓▓████▓▓▒▒");
-        stdout.println("                                          ▓▓▓▓    ▓▓▒▒░░▒▒▒▒▒▒▓▓████▓▓▓▓");
-        stdout.println("                                            ▓▓      ░░▓▓░░▒▒▒▒▒▒▓▓████▓▓");
-        stdout.println("                                            ▓▓          ▓▓▒▒▒▒▓▓▒▒████▓▓");
-        stdout.println("                                              ▒▒          ▒▒░░▓▓▒▒████▓▓");
-        stdout.println("                                                            ▓▓▒▒▓▓▓▓██▓▓");
-        stdout.println("                                                            ▒▒▒▒▓▓▓▓██▓▓");
-        stdout.println("                                                            ░░░░▓▓▓▓██▒▒");
-        stdout.println("                                              ░░            ░░▒▒▓▓▓▓▓▓  ");
-        stdout.println("                                              ▒▒            ▒▒▒▒▓▓██▓▓  ");
-        stdout.println("                                              ▒▒            ▓▓▒▒▓▓▓▓    ");
-        stdout.println("                                            ▒▒▒▒        ░░▓▓██▓▓██      ");
-        stdout.println("                                            ▓▓▓▓    ▓▓▓▓▓▓▓▓▒▒██        ");
-        stdout.println("                                            ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓            ");
-        stdout.println("                                          ▓▓▓▓▒▒  ▓▓  ▓▓▓▓              ");
-        stdout.println("                                          ▓▓▓▓        ▓▓                ");
-        stdout.println("                                          ▓▓        ▒▒▒▒                ");
-        stdout.println("                                        ▓▓▒▒                            ");
-        stdout.println("                                      ░░▓▓                              ");
-        stdout.println("                                                                        ");
-        stdout.println("                                                                        ");
-        stdout.println("                                                                        ");
-        stdout.println("                                                                        ");
-        stdout.println("                                                                        ");
-        stdout.println("      ░░░░  ░░░░░░░░  ░░5w02df15h░░░░53cu217y░░░░░░░░  ░░░░  ░░░░       ");
     }
 
     @Override

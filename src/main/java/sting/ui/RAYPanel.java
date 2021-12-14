@@ -44,7 +44,7 @@ public class RAYPanel extends JPanel {
     private final burp.IExtensionHelpers helpers;
     private final RAYImport rayimport;
     private final JCheckBox chkFakeParam;
-    private final String paramname = "stingrayParamToExclude";
+    private final String paramname = "mdastParamToExclude";
 
     // Constructor
     public RAYPanel(IBurpExtenderCallbacks callbacks) {
@@ -63,7 +63,7 @@ public class RAYPanel extends JPanel {
         // Add Logo Image
         ClassLoader cldr = this.getClass().getClassLoader();
         URL imageURLMain = cldr.getResource("AboutPlugin.png");
-        JLabel lblMain = new JLabel("Sting LOGO"); // to see the label in eclipse design tab!
+        JLabel lblMain = new JLabel("LOGO"); // to see the label in eclipse design tab!
         ImageIcon imageIconMain;
         if (imageURLMain != null) {
             imageIconMain = new ImageIcon(imageURLMain);
@@ -85,7 +85,7 @@ public class RAYPanel extends JPanel {
         //
         // FAKE PARAMETER TRICK
         //
-        JLabel lblFakeParam = new JLabel("Add stingray parameter \"" + this.paramname + "\"");
+        JLabel lblFakeParam = new JLabel("Add mdast parameter \"" + this.paramname + "\"");
         gbc.insets = new Insets(20, 0, 5, 5);
         gbc.gridheight = 1;
         gbc.gridx = 1;
